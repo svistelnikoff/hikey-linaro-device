@@ -48,6 +48,9 @@ DEVICE_MANIFEST_FILE += device/linaro/hikey/sensorhal/manifest.xml
 DEVICE_MANIFEST_FILE += device/linaro/hikey/vr/manifest.xml
 endif
 
+DEVICE_MANIFEST_FILE += vendor/gl/interfaces/manifest.xml
+DEVICE_MATRIX_FILE += vendor/gl/interfaces/compatibility_matrix.xml
+
 ifeq ($(HOST_OS), linux)
 ifeq ($(TARGET_SYSTEMIMAGES_USE_SQUASHFS), true)
 BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := squashfs
